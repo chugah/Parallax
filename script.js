@@ -12,30 +12,35 @@
       description: 'Debut Instrumental Studio Album',
       href: 'http://rickplester.com/rick-plester.htm',
       color: '#ffffff'
+      /* image: 'images/nix-preview.png' some image */
     },
     {
       name: 'Black Symphony IV',
       description: 'Self-titled 4th Studio Album',
       href: 'http://rickplester.com/black-symphony-iv.htm',
       color: '#ffffff'
+      /* image: 'images/nix-preview.png' some image */
     },
     {
       name: 'Black Symphony III',
       description: 'Sewing the Seeds of Destruction',
       href: 'http://rickplester.com/product-3.htm',
       color: '#ffffff'
+      /* image: 'images/nix-preview.png' some image */
     },
     {
       name: 'Black Symphony II',
       description: 'Tears of Blood',
       href: 'http://rickplester.com/product-2.htm',
       color: '#ffffff'
+      /* image: 'images/nix-preview.png' some image */
     },
     {
       name: 'Black Symphony I',
       description: 'Self-titled 1st Studio Album',
       href: 'http://rickplester.com/product-1.htm',
       color: '#ffffff'
+      /* image: 'images/nix-preview.png' some image */
     }
   ];
   var PRESENTATIONS = [
@@ -44,24 +49,28 @@
       description: 'One Child - JBFM track',
       href: 'http://jeffbuick.com/books/18-one-child',
       color: '#ffffff'
+      /* image: 'images/nix-preview.png' some image */
     },
     {
       name: 'Killinger',
       description: 'Self-titled Studio Album',
       href: 'http://www.artistdirect.com/nad/store/artist/album/0,,7704374,00.html',
       color: '#ffffff'
+      /* image: 'images/nix-preview.png' some image */
     },
     {
       name: 'Deeper Blues',
       description: 'Dig the Hole',
       href: 'http://www.artistdirect.com/nad/store/artist/album/0,,4585640,00.html',
       color: '#ffffff'
+      /* image: 'images/nix-preview.png' some image */
     },
     {
       name: 'Krunk',
       description: 'Therupy',
       href: 'http://www.artistdirect.com/nad/store/artist/album/0,,3786134,00.html',
       color: '#ffffff'
+      /* image: 'images/nix-preview.png' some image */
     }
   ];
 
@@ -250,5 +259,33 @@
   // copyright
   var copyrightYear = document.querySelector('.copyright .year');
   copyrightYear.textContent = new Date().getFullYear();
+  
+  // email
+  function showEmail(e) {
+    e.preventDefault();
+
+    var emailAddress = 'rocvoc' + '@' + 'gmail' + '.' + 'com';
+    emailLink.textContent = emailAddress;
+    emailLink.setAttribute('href', 'mailto:' + emailAddress);
+    email.classList.add('visible');
+
+    email.addEventListener('click', hideEmail);
+  }
+
+  function hideEmail(e) {
+    if (e.target === emailLink) {
+      return;
+    }
+
+    e.preventDefault();
+    email.classList.remove('visible');
+
+    email.removeEventListener('click', hideEmail);
+  }
+
+  var email = document.querySelector('.email');
+  var emailButton = document.querySelector('.email-button');
+  var emailLink = document.querySelector('.email-link');
+  emailButton.addEventListener('click', showEmail);
 
 })();
