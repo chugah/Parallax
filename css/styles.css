@@ -69,7 +69,7 @@ html {
 body {
   background: black;
   color: rgba(255, 255, 255, 0.5);
-  font-family: "AvenirNextLTW01-Regular", sans-serif;
+  font-family: sans-serif;
   line-height: 1.5; }
 
 p + p {
@@ -162,7 +162,7 @@ a {
       margin-right: 2.5%; } }
 
 .bio-block {
-  font-family: "Avenir Next W01 Thin", sans-serif;
+  font-family: sans-serif;
   font-size: 2.2rem; }
   .bio-block a {
     color: #56b2ff; }
@@ -209,7 +209,7 @@ a {
       position: absolute; } }
   .details h2 {
     font-size: 3.3rem;
-    font-family: "Avenir Next W01 Thin", sans-serif;
+    font-family: sans-serif;
     line-height: 1.2;
     text-transform: uppercase;
     letter-spacing: 0.2em; }
@@ -225,7 +225,7 @@ strong {
 .section-subhead {
   margin-bottom: 50px;
   font-size: 0.9rem;
-  font-family: "AvenirNextLTW01-Medium", sans-serif;
+  font-family: sans-serif;
   color: white;
   letter-spacing: 2px;
   text-transform: uppercase; }
@@ -253,7 +253,7 @@ strong {
   font-size: 3.3rem;
   line-height: 1.2;
   text-transform: uppercase;
-  font-family: "Avenir Next W01 Thin", sans-serif; }
+  font-family: sans-serif; }
 
 section,
 footer {
@@ -266,7 +266,7 @@ footer {
     float: left;
     width: 57.29167%;
     margin-right: 2.5%;
-    font-family: "Avenir Next W01 Thin", sans-serif; }
+    font-family: sans-serif; }
     @media (max-width: 1024px) {
       .studio-section .studio-description {
         margin-left: 8.54167%;
@@ -284,7 +284,7 @@ footer {
     text-align: right;
     color: black; }
     .studio-section .studio-quote p {
-      font-family: "AvenirNextW01-ThinItali", sans-serif;
+      font-family: sans-serif;
       font-size: 1.7rem; }
     .studio-section .studio-quote cite {
       display: block;
@@ -414,7 +414,7 @@ footer {
   display: block;
   font-size: 1.05rem;
   line-height: 1.3;
-  font-family: "AvenirNextLTW01-Medium", sans-serif;
+  font-family: sans-serif;
   color: white; }
   @media (max-width: 480px) {
     .list-name {
@@ -424,7 +424,7 @@ footer {
   display: block;
   margin-top: 6px;
   font-size: 0.8rem;
-  font-family: "AvenirNextLTW01-Regular", sans-serif;
+  font-family: sans-serif;
   color: rgba(255, 255, 255, 0.5); }
   @media (max-width: 480px) {
     .list-detail {
@@ -589,7 +589,7 @@ footer {
 
 .email-link {
   font-size: 3.3rem;
-  font-family: "Avenir Next W01 Thin", sans-serif; }
+  font-family: sans-serif; }
 
 .close-button {
   position: absolute;
@@ -600,7 +600,7 @@ footer {
   background: none;
   color: black;
   font-size: 2.8rem;
-  font-family: "Avenir Next W01 Thin", sans-serif; }
+  font-family: sans-serif; }
 
 .email-blurb {
   color: black;
@@ -613,5 +613,3 @@ footer {
 @media (max-width: 1024px) {
   html {
     font-size: 14px; } }
-
-/*# sourceMappingURL=styles.css.map */
