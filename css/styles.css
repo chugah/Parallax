@@ -187,7 +187,7 @@ a {
   bottom: 0;
   left: 0;
   z-index: 0;
-  background: url(./images/portrait-3.jpg) #131313;
+  background: url(../images/portrait-3.jpg) #131313;
   background-size: cover;
   -webkit-transform: scale(1.05);
   -ms-transform: scale(1.05);
@@ -195,7 +195,7 @@ a {
   @media (max-width: 700px), (max-height: 500px) {
     .portrait {
       position: absolute;
-      background-image: url(./images/portrait-3-small.jpg); } }
+      background-image: url(../images/portrait-3-small.jpg); } }
   .portrait.no-bg {
     background: #131313; }
 
